@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8">
+		<title>Lorem</title>
+	
+		<link href="css/bootstrap.min.css" rel="stylesheet">	
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	</head>
+
+	<body>
+	<!-- Cabeçalho -->
+		<div class="topo">
+			<input type="text" id="busca" placeholder="Digite o que você procura..."/> 
+			<img  src="img/logo.png" id="logo" style="height: 200%; width: 200px;">
+			<div >
+				<button id=mp>Meus Pedidos</button>
+				<button id=mc> <img src="img/cesta.png" style="width: 30px"> Minha cesta (0)</button>
+			</div>
+			
+		</div>
+
+	<!-- Categorias -->
+		<nav>
+			<ul>
+				<li><a href="#">Eletronicos</a></li>
+				<li><a href="#">Celulares e Telefones</a></li>
+				<li><a href="#">Informática</a></li>
+				<li><a href="#">Móveis e decoração</a></li>
+				<li><a href="#">Livros</a></li>
+			</ul>
+		</nav> 
+		
+	<!-- Banner -->
+
+		<div class="banner">
+			<img src="img/banner.png" style="width: 100%">
+			<div class="banner_box">
+				<img id="um" src="img/1.png">
+				<img id="dois" src="img/2.png">
+				<img id="tres" src="img/3.png"> 
+			</div>	
+		</div>
+
+	<!-- Itens de amostra --> 
+			<div class="box_card">
+				<div class="card">
+					<img id="imagem" src="img/Celular.png" style="width: 100%">
+					<h4>Samsung galaxy j10</h4>
+					<p>De R$ 5.000.00 por R$4.300.00</p>
+					<input style="width: 4ch" id="qtd" class="form-control rounded-0" type="number" name="quantidade" onchange="preencheTotalProduto()" min="1" max="<?= $tamanho['estoque'];?>" value="0">
+					<BUTTON id="adn">Adicionar ao carrinho</BUTTON>
+				</div>
+				<div class="card">
+					<img id="imagem" src="img/Computador.png" style="width: 100%">
+					<h4>PC Gamer, Intel i9, 20 Ram </h4>
+					<p>De R$ 18.000.00 por R$17.300.00</p>
+					<input style="width: 4ch" id="qtd" class="form-control rounded-0" type="number" name="quantidade" onchange="preencheTotalProduto()" min="1" max="<?= $tamanho['estoque'];?>" value="0">
+					<BUTTON id="adn">Adicionar ao carrinho</BUTTON>
+				</div>
+				<div class="card">
+					<img id="imagem" src="img/Cozinha.png" style="width:100%">
+					<h4>Cozinha Planejada</h4>
+					<p>Dê R$ 5.000.00 por R$ 4.000.00</p>
+					<input style="width: 4ch" id="qtd" class="form-control rounded-0" type="number" name="quantidade" onchange="preencheTotalProduto()" min="1" max="<?= $tamanho['estoque'];?>" value="0">
+					<BUTTON id="adn">Adicionar ao carrinho</BUTTON>
+				</div>
+				<div class="card">
+					<img id="imagem" src="img/Livro.png" style="width:100%">
+					<h4>Como treinar seu dragão</h4>
+					<p> Dê R$ 200.00 por R$ 189.99 </p>
+					<input style="width: 4ch" id="qtd" class="form-control rounded-0" type="number" name="quantidade" onchange="preencheTotalProduto()" min="1" max="<?= $tamanho['estoque'];?>" value="0">
+					<BUTTON id="adn">Adicionar ao carrinho</BUTTON>
+				</div>			
+			</div>
+			
+	<!-- Rodapé -->
+		<div class="push"></div>
+		<footer> 
+			<div class="box_menu_footer">
+				<div class="menu_footer">
+					<h5>Quem somos:</h5>
+					<ul>
+						<li><a href="">Sobre a Lorem</a> </li>
+						<li><a href="">Premios</a> </li>
+						<li><a href="">Novidades</a> </li>
+						<li><a href="">Novidades</a> </li>
+					</ul>
+				</div>	
+	
+				<div class="menu_footer" >
+					<h5>Produtos:</h5>
+					<ul>
+						<li><a href="">Eletrônicos</a> </li>
+						<li><a href="">Livros</a> </li>
+						<li><a href="">Informatica</a> </li>
+						<li><a href="">Informatica</a> </li>
+					</ul>
+				</div>	
+	
+				<div class="menu_footer">
+					<h5>Precisa de Ajuda?</h5>
+					<ul>
+						<li><a href="">Reclama aqui</a></li>
+						<li><a href="">Contacte-nos por telefone</a></li>
+						<li><a href="">Dúvidas Técnicas/E-mail</a></li>
+						<li><a href="">Dúvidas Técnicas/E-mail</a></li>
+					</ul>
+				</div>	
+				<div class="menu_footer">
+					<h5>Precisa de Ajuda?</h5>
+					<ul>
+						<li><a href="">Reclama aqui</a></li>
+						<li><a href="">Contacte-nos por telefone</a></li>
+						<li><a href="">Dúvidas Técnicas/E-mail</a></li>
+						<li><a href="">Dúvidas Técnicas/E-mail</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
